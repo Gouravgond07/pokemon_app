@@ -3,7 +3,7 @@ import './pokemon.css';
 import TypeColor from '../utils/typeColor';
 
 function Pokemon(props) {
-    let [isImageLoaded, setIsImageLoaded] = useState(true);
+    let [isImageLoaded, setIsImageLoaded] = useState(false);
 
     return (
             <div className="card border pokemon-card py-2" style={{ backgroundColor: TypeColor[props.types[0]] }}>
