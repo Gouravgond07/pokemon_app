@@ -1,0 +1,86 @@
+.pokenav>li {
+    font-family: 'Lato';
+    font-size: large;
+    /* font-size: 130%; */
+    font-weight: 200;
+}
+
+@media screen and (max-width: 576px) {
+    .pokenav>li {
+        font-size: 150% !important;
+    }
+}
+
+.pokenav>li>a {
+    text-decoration: none;
+    color: #000000eb;
+}
+
+.pokenav>li.active {
+    font-weight: bold !important;
+    border-bottom: 1px solid blue;
+}
+
+.tab-pane {
+    font-size: large;
+    font-family: 'Lato';
+    max-height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pokemon-tab-info>dd {
+    font-weight: lighter;
+}
+
+.pokemon-tab-info>dt {
+    font-weight: 600;
+}
+
+.pokemon-name {
+    font-family: 'Lato';
+    font-weight: bold;
+}
+
+ul {
+    white-space: nowrap;
+}
+
+li {
+    display: inline;
+}
+
+.progressbar3 {
+    animation-name: progressbar2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes progressbar2 {
+    from {
+        left: 0
+    }
+    to {
+        left: 100%
+    }
+}
+
+
+/* Standard syntax */
+
+.progressbar {
+    height: 5px;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-name: progressbarEffect;
+}
+
+@keyframes progressbarEffect {
+    0% {
+        width: 0;
+        background-color: #fb7777;
+    }
+}
